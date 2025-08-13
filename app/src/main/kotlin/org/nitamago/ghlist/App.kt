@@ -25,7 +25,7 @@ fun main(args: Array<String>) {
         }
 
         println("\nRepositories for $username:")
-        println("${"─".repeat(80)}")
+        println("─".repeat(80))
 
         repositories.forEach { repo ->
             println("Name: ${repo.name}")
@@ -35,7 +35,7 @@ fun main(args: Array<String>) {
             repo.language?.let { println("Language: $it") }
             println("Stars: ${repo.stargazers_count}, Forks: ${repo.forks_count}")
             println("Last Updated: ${repo.updated_at}")
-            println("${"─".repeat(80)}")
+            println("─".repeat(80))
         }
 
         println("\nTotal: ${repositories.size} repositories")
