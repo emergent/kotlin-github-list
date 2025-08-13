@@ -1,4 +1,4 @@
-package org.example
+package org.nitamago.ghlist
 
 import org.junit.jupiter.api.Assertions.assertNotNull
 import org.junit.jupiter.api.Test

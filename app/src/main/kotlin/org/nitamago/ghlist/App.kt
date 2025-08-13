@@ -1,4 +1,4 @@
-package org.example
+package org.nitamago.ghlist
 
 import kotlin.system.exitProcess
 

@@ -1,7 +1,8 @@
-package org.example
+package org.nitamago.ghlist
 
 import com.squareup.moshi.JsonClass
 import com.squareup.moshi.Moshi
+import com.squareup.moshi.Types
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import okhttp3.OkHttpClient
 import okhttp3.Request
@@ -53,7 +54,7 @@ class GitHubClient {
 
             val adapter =
                 moshi.adapter<List<Repository>>(
-                    com.squareup.moshi.Types.newParameterizedType(
+                    Types.newParameterizedType(
                         List::class.java,
                         Repository::class.java,
                     ),
